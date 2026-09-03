@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Edgie Marielle Ambao</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Edgie Marielle Ambao | This Home Page contains brief information about me, the place I live, and some resources for web development.">
+    <meta name="author" content="Edgie Marielle Ambao">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Ambao</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/edgie-marielle-ambao-47a4b13b5/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/10?lang=eng&id=p32#p32">Scripture</a></li>
+                <li><a href="#finalproject">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Edgie Marielle A. Ambao</h1>
+        <section class="card about-card">
+            <h2 class="about">About Me</h2>
+            <img src="images/edgie-marielle.jpg" alt="Edgie Marielle">
+            <p>My name is Edgie Marielle A. Ambao, I am from Batangas, Philippines. I am currently pursuing a degree in Software Development. Some things that I enjoy doing are playing volleyball and spending time with my family, especially whenever we visit and worship inside the temple. I come from a big family, we are 10 in the family including my parents.  My family is important to me and I hope to be with them for eternity.</p>
+        </section>
+        <section class="card country-card">
+            <h2>Batangas, Philippines</h2>
+            <img src="images/philippines-flag.jpg" alt="Philippine Flag">
+            <p>Philippines is known for its incredible beautiful islands. It has approximately 7,641 islands in all three regions:
+            Luzon, Visayas, and Mindanao. The official national language of the Philippines is Filipino.</p>
+        </section>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 💌Edgie Marielle Ambao💌 Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
