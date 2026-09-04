@@ -34,6 +34,7 @@ header {
 .navigation a {
     text-decoration: none;
     color: #3d412c;
+    font-weight: 600;
 }
 
 .navigation a:hover {
@@ -105,7 +106,10 @@ main h1 {
 footer {
     background-color: #949a6d;
     margin-top: 20px;
-    padding: 15px;
+    padding: 13px;
     text-align: center;
     line-height: 1.4;
+    font-weight: 300;
+    font-size: 15px;
 }
+
