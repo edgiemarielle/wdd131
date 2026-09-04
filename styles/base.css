@@ -6,7 +6,7 @@
 
 header {
     width: 100%;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 #course-title {
@@ -52,7 +52,6 @@ main h1 {
     text-align: center;
     color: #3d412c;
     padding: 20px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .card {
@@ -69,14 +68,11 @@ main h1 {
 }
 
 .card h2 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 100%;
     text-align: center;
 }
 
 .about-card img {
     width: 180px;
-    border: 1px silver;
     margin: 30px 25px;
     float: right;
     border: 1px solid slategray;
@@ -98,7 +94,6 @@ main h1 {
 .country-card img {
     width: 200px;
     margin: 20px 60px 0;
-    float: center;
     border: 1px solid slategray;
 }
 
