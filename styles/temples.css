@@ -27,6 +27,10 @@ header p {
     font-weight: 600;
 }
 
+nav {
+    display: flex;
+}
+
 .navigation {
     display: flex;
     flex-direction: column;
