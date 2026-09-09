@@ -19,9 +19,10 @@ header, main {
     margin: 0 auto;
 }
 
-header h1 {
+header p {
     font-size: 30px;
     padding-left: 20px;
+    font-weight: 600;
 }
 
 .navigation {
