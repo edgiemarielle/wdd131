@@ -79,6 +79,10 @@ main {
     font-size: 25px;
 }
 
+figure img {
+    width: 300px;
+    height: auto;
+}
 
 figcaption {
     text-align: center;
