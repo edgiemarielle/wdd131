@@ -13,9 +13,11 @@ header {
     background-color: #88c4a9;
     padding: 20px 20px;
     justify-content: space-between;
+    position: relative;
 }
 
-header, main {
+header,
+main {
     margin: 0 auto;
 }
 
@@ -26,17 +28,24 @@ header p {
 }
 
 .navigation {
-    display: none;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     list-style: none;
     padding-right: 20px;
     gap: 30px;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    right: 0;
+    visibility: hidden;
+    z-index: 1000;
+    background-color: #88c4a9;
 }
 
 .navigation.show {
-    display: flex;
     padding: 20px;
+    visibility: visible;
 }
 
 #menu {
@@ -46,6 +55,8 @@ header p {
     text-decoration: none;
     padding: 0.5rem 0.75rem;
     color: #000;
+    z-index: 1001;
+    position: relative;
 }
 
 #menu::before {
@@ -81,7 +92,7 @@ main {
 }
 
 figure img {
-    width: 300px;
+    width: 250px;
     height: auto;
 }
 

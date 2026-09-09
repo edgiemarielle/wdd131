@@ -9,7 +9,9 @@
         display: flex;
         justify-content: flex-end;
         flex-direction: row;
-        flex: 1 1 100%
+        flex: 1 1 100%;
+        visibility: visible;
+        padding-top: 20px;
     }
 
     #menu {
