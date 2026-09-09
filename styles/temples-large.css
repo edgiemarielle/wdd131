@@ -1,0 +1,32 @@
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex: 1 1 100%
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .page-title {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+}
