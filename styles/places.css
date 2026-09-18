@@ -7,10 +7,6 @@
     --background-color: rgb(135, 188, 221);
 }
 
-body, header {
-    width: 100%;
-}
-
 header, main, footer {
     font-family: "DM Sans", sans-serif;
 }
@@ -19,7 +15,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    width: 100%;
+    width: 360px;
     background-color: var(--background-color);
 }
 
@@ -68,6 +64,7 @@ footer {
     padding: 8px;
     text-align: center;
     font-size: 14px;
+    width: 360px;
 }
 
 
@@ -78,6 +75,7 @@ footer {
             font-size: 20px;
             text-align: center;
             padding: 20px;
+            width: 1224px;
         }
     
     .hero {
