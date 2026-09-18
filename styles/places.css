@@ -1,10 +1,19 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
     --background-color: rgb(135, 188, 221);
+}
+
+body {
+    margin: 0;
+}
+
+body, main, footer {
+    width: 100%;
 }
 
 header, main, footer {
@@ -21,6 +30,10 @@ header {
 
 header h1 {
     text-align: center;
+}
+
+main {
+    display: grid;
 }
 
 .hero {
@@ -69,58 +82,62 @@ footer {
 
 
 @media (min-width: 500px) {
+    body {
+        margin: 0;
+    }
+
     header {
-            position: relative;
-            background-color: var(--background-color);
-            font-size: 20px;
-            text-align: center;
-            padding: 20px;
-            width: 1224px;
+        position: relative;
+        background-color: var(--background-color);
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+        width: 100%;
         }
     
     .hero {
-            position: relative;
-            width: 100%;
-            margin: 0 auto;
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
         }
     
     .hero img {
-            display: block;
-            width: 100%;
-            height: auto;
+        display: block;
+        width: 100%;
+        height: auto;
         }
     
     .data {
-            position: absolute;
-            width: 280px;
-            background-color: rgb(173, 216, 230, 0.85);
-            padding: 10px;
-            top: 20px;
-            left: 20px;
-            border-radius: 10px;
+        position: absolute;
+        width: 280px;
+        background-color: rgb(173, 216, 230, 0.85);
+        padding: 10px;
+        top: 20px;
+        left: 20px;
+        border-radius: 10px;
         }
     
     .data h2, .weather h2 {
-            background-color: rgb(246, 255, 246, 0.85);
-            text-align: center;
+        background-color: rgb(246, 255, 246, 0.85);
+        text-align: center;
         }
     
     .data li, .weather li {
-            list-style: none;
-            text-align: left;
-            margin: 0;
-            margin-left: 30px;
-            padding-top: 5px;
+        list-style: none;
+        text-align: left;
+        margin: 0;            
+        margin-left: 30px;
+        padding-top: 5px;
         }
     
     .weather {
-            position: absolute;
-            bottom: 20px;
-            right: 20px;
-            background-color: rgb(173, 216, 230, 0.85);
-            width: 280px;
-            padding: 10px;
-            border-radius: 10px;
+        position: absolute;
+        bottom: 20px;
+        right: 20px;            
+        background-color: rgb(173, 216, 230, 0.85);
+        width: 280px;
+        padding: 10px;
+        border-radius: 10px;
         }
 
     .weather-icon {
@@ -132,10 +149,10 @@ footer {
     }
     
     footer {
-            background-color: var(--background-color);
-            padding: 8px;
-            text-align: center;
-            font-size: 14px;
-            width: 1248px;
-        }
+        background-color: var(--background-color);
+        padding: 8px;
+        text-align: center;
+        font-size: 14px;
+        width: 100%;
+    }
 }
