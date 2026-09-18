@@ -7,6 +7,10 @@
     --background-color: rgb(135, 188, 221);
 }
 
+body, header, footer {
+    width: 100%;
+}
+
 header, main, footer {
     font-family: "DM Sans", sans-serif;
 }
@@ -15,6 +19,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 15px;
+    width: 100%;
     background-color: var(--background-color);
 }
 
