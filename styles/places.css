@@ -10,9 +10,6 @@
 
 body {
     margin: 0;
-}
-
-body, main, footer {
     width: 100%;
 }
 
@@ -24,7 +21,7 @@ header {
     display: flex;
     flex-direction: column;
     padding: 15px;
-    width: 360px;
+    width: 100%;
     background-color: var(--background-color);
 }
 
@@ -37,6 +34,15 @@ main {
 }
 
 .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero img {
     width: 100%;
     height: auto;
 }
@@ -76,7 +82,7 @@ footer {
     padding: 8px;
     text-align: center;
     font-size: 14px;
-    width: 360px;
+    width: 100%;
 }
 
 
