@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Picture Album Enhancement</title>
+    <meta name="description" content="Week 04 Assignment - Enhanacement of the Temple Picture Album by adding native lazy loading to make the webpage responsive to user interaction.">
+    <meta name="author" content="Edgie Marielle Ambao">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Temple Album</p>
+        <a id="menu" href="#hamburgerButton" aria-label="open navigation menu"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#old">Old</a></li>
+                <li><a href="#new">New</a></li>
+                <li><a href="#large">Large</a></li>
+                <li><a href="#small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="page-title">Home</h1>
+        <div id="temples-album"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 💌Edgie Marielle Ambao💌 Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

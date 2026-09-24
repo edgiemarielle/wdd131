@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Valley Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: #88c4a9;
+    padding: 20px 20px;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+}
+
+header,
+main {
+    margin: 0 auto;
+}
+
+header p {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+h1 {
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-right: 20px;
+    gap: 30px;
+    position: absolute;
+    text-align: center;
+    top: 55px;
+    right: 0;
+    visibility: hidden;
+    z-index: 1000;
+    background-color: #88c4a9;
+}
+
+.navigation.show {
+    padding: 20px;
+    visibility: visible;
+}
+
+#menu {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    color: #000;
+    z-index: 1001;
+    position: relative;
+    margin-left: auto;
+    align-self: flex-start;
+}
+
+#menu::before {
+    content: '☰';
+}
+
+#menu.show::before {
+    content: '🔙';
+}
+
+.navigation a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    background-color: aliceblue;
+    padding: 10px;
+}
+
+main {
+    justify-content: center;
+}
+
+.page-title {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+}
+
+#temples-album {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    gap: 2rem;
+    width: min(100%, 1100px) ;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 1rem auto 2rem;
+    align-items: stretch;
+}
+
+.temple-card {
+    background-color: #e8e5e5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.temple-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 670 / 420 ;
+}
+
+#temples-album h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#temples-album p {
+    font-size: 12px;
+}
+
+#temples-album img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 400 / 250;
+    object-fit: cover;
+    display: block;
+    margin-top: 15px;
+    border: 1px solid #635e5e;
+    box-shadow: 0 2px 6px;
+}
+
+footer {
+    background-color: #88c4a9;
+    margin-top: 20px;
+    padding: 13px;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 14px;
+}

@@ -1,0 +1,60 @@
+@media (min-width: 700px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header p {
+        font-size: 30px;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+        flex: 1 1 100%;
+        visibility: visible;
+        padding-top: 20px;
+        top: 10px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: block;
+
+    }
+
+    #temples-album {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(300px, 1fr));
+        gap: 2rem;
+        width: min(100%, 1100px);
+        height: auto;
+        text-align: center;
+        padding: 20px;
+        box-sizing: border-box;
+        margin: 1rem auto 2rem;
+        align-items: stretch;
+    }
+
+    #temples-album h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    #temples-album p {
+        font-size: 14px;
+    }
+    
+    .page-title {
+        margin-top: 15px;
+        padding: 10px;
+    }
+
+}
