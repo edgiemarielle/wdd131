@@ -94,7 +94,7 @@ input[type="radio"] {
     color: #000;
 }
 
-textarea[id="review"], input[type="name"] {
+textarea[id="review"], input[type="text"] {
     margin-left: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
@@ -103,7 +103,7 @@ textarea[id="review"], input[type="name"] {
     height: 100px;
 }
 
-input[type="name"] {
+input[type="text"] {
     height: auto;
     padding: 10px;
     max-width: 280px;
