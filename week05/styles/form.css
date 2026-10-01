@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #c7cdbf;
+    padding: 10px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: #544c4a;
+}
+
+form {
+    background-color: #faf9f6;
+    font-family: "Oswald";
+    padding: 20px;
+}
+
+select[id="product-name"] {
+    font-family: "Oswald";
+    font-size: 15px;
+    color: #000;
+
+}
+
+label, legend, p {
+    font-size: 20px;
+    color: #544c4a;
+}
+
+select, input[type="date"] {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+input[type="date"] {
+    max-width: 280px;
+}
+
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+.stars>label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars>label:hover {
+    color: #000;
+}
+
+.stars>label::before {
+    content: "\2606";
+}
+
+.stars input:checked~label::before {
+    content: "\2605";
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    color: #544c4a;
+}
+
+.checkbox label {
+    font-size: 16px;
+    color: #000;
+}
+
+textarea[id="review"], input[type="name"] {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: 100px;
+}
+
+input[type="name"] {
+    height: auto;
+    padding: 10px;
+    max-width: 280px;
+}
+
+label {
+    display: flex;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: "Oswald";
+    font-weight: 500;
+    color: #544c4a;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+}
+
+footer p {
+    font-size: 14px;
+}
