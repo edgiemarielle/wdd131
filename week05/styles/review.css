@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+    margin-top: 50px;
+}
+
+main h1, p, a {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 22px;
+    margin-bottom: 50px;
+    color: #544c4a;
+}
+
+main a {
+    color: black;
+    border: 2px solid #544c4a;
+    padding: 10px;
+    border-radius: 5px;
+
+}
