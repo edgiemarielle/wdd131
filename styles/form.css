@@ -129,3 +129,14 @@ input[type="submit"] {
 footer p {
     font-size: 14px;
 }
+
+@media (min-width: 700px){
+    form {
+        padding-left: 400px;
+    }
+
+    input[type="submit"] {
+        margin: 15px 30px 0 80px;
+    }
+    
+}
