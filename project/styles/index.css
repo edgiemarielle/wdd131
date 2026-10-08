@@ -19,8 +19,10 @@ header {
 }
 
 header img {
+    margin-top: 5px;
     margin-left: 10px;
     width: 50px;
+    height: 50px;
 }
 
 nav {
@@ -99,12 +101,20 @@ main {
         serif;
 }
 
+.wed {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+    color: var(--burgundy);
+}
+
 main h1 {
     font-size: 40px;
     color: var(--burgundy);
     font-family: "Tangerine", cursive;
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 main h2 {
@@ -121,8 +131,8 @@ main p {
     text-align: justify;
 }
 
-.date {
-    margin-bottom: 10px;
+main div {
+    padding: 10px;
 }
 
 .date {
@@ -132,7 +142,7 @@ main p {
     border-radius: 10px;
     color: var(--beige);
     width: 320px;
-    
+    margin-bottom: 10px;
 }
 
 .date h2 {
@@ -160,7 +170,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
     header {
         flex-wrap: nowrap;
     }

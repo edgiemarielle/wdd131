@@ -172,7 +172,7 @@ footer {
     text-align: center;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
     header {
         flex-wrap: nowrap;
     }
