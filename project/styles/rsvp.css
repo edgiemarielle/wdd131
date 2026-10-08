@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --burgundy: #800020;
+    --beige: #ede8d0;
+}
+
+header {
+    background-color: var(--burgundy);
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    margin-left: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    position: absolute;
+    z-index: 999;
+    top: 50px;
+    right: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: none;
+    background: none;
+    color: var(--beige);
+    position: relative;
+    margin-left: auto;
+    padding: 10px;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 150px;
+}
+
+.navigation.open {
+    display: block;
+}
+
+.navigation ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navigation li {
+    list-style: none;
+    width: 100px;
+    margin: 0;
+}
+
+.navigation a {
+    display: none;
+    padding: 20px;
+    text-decoration: none;
+    color: var(--beige);
+    background-color: var(--burgundy);
+    font-weight: 600;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+    color: var(--beige);
+}
+
+.open a {
+    display: block;
+}
+
+main {
+    background-color: var(--beige);
+    font-family: "Cormorant Garamond",
+        serif;
+    padding-top: 20px;
+}
+
+main h1 {
+    font-size: 40px;
+    color: var(--burgundy);
+    font-family: "Tangerine", cursive;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wed {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 15px;
+    color: var(--burgundy);
+}
+
+.rsvp {
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color: var(--burgundy);
+    margin-bottom: 30px;
+    text-decoration: underline;
+}
+
+form {
+    border-top: 1px solid var(--burgundy);
+    padding: 20px;
+}
+
+form p {
+    margin-top: 10px;
+    color: var(--burgundy);
+    font-weight: 600;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+label[for="name"], label[for="email"], label[for="guest"] {
+    color: var(--burgundy);
+    font-weight: 600;
+}
+
+input[type="text"], input[type="email"] {
+    padding: 5px;
+    height: auto;
+    width: 200px;
+    max-width: 300px;
+    margin-bottom: 15px;
+    color: var(--burgundy);
+}
+
+.attendance {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 7px;
+    margin: 10px 0; 
+    font-weight: 500;
+}
+
+.attendance input[type="radio"] {
+    margin-top: 5px;
+}
+
+input[type="submit"] {
+    font-family: "Cormorant Garamond";
+    font-weight: 700;
+    font-size: 18px;
+    padding: 5px;
+    margin-top: 20px;
+    width: 120px;
+    background-color: var(--burgundy);
+    color: var(--beige);
+}
+
+.layout {
+    display: grid;
+    gap: 20px;
+}
+
+.photo {
+    margin: 10px auto;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer {
+    background-color: var(--burgundy);
+    color: var(--beige);
+    font-family: "Cormorant Garamond";
+    padding: 15px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    header {
+        flex-wrap: nowrap;
+    }
+
+    nav {
+        position: static;
+        width: auto;
+    }
+
+    .navigation {
+        display: flex;
+        width: auto;
+    }
+
+    .navigation ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .navigation li {
+        width: auto;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation a {
+        display: block;
+        font-family: "Cormorant Garamond";
+        font-weight: 800;
+        font-size: 20px;
+    }
+
+    main {
+        padding: 10px;
+        padding-top: 20px;
+    }
+
+    main h1 {
+        font-size: 50px;
+    }
+
+    .rsvp {
+        font-size: 30px;
+    }
+
+    label[for="name"],
+    label[for="email"],
+    label[for="guest"], main p {
+        font-size: 18px;
+    }
+
+
+    form {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        border: 3px solid var(--burgundy);
+        border-radius: 10px;
+        padding: 20px;
+        margin: 10px auto;
+    }
+
+    .rsvp {
+        grid-column: 1 / -1;
+    }
+
+    .photo {
+        width: 100%;
+        margin: 0;
+        align-self: start;
+    }
+}

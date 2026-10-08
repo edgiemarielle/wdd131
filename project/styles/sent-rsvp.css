@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --burgundy: #800020;
+    --beige: #ede8d0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--burgundy);
+}
+
+main {
+    min-height: 100vh;
+    background-color: var(--beige);
+    font-family: "Tangerine", cursive;
+    color: var(--burgundy);
+    text-align: center;
+}
+
+main h1 {
+    font-size: 60px;
+    padding-top: 100px;
+}
+
+main a {
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+}

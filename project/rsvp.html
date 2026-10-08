@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Week 06 Project - Edgie Marielle Ambao</title>
+    <meta name="description"
+        content="This page contains the website planning document for week 05 project that will serve as my guide to develop and design my final project for this course.">
+    <meta name="author" content="Edgie Marielle Ambao">
+    <link rel="stylesheet" href="styles/rsvp.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Tangerine:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.jpeg" alt="Website Logo" loading="lazy" width="70" height="50">
+        <button id="menu" type="button" aria-label="navigation"></button>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rsvp.html">RSVP</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p class="wed">THE WEDDING OF</p>
+        <h1>Jethro & Mae</h1>
+        <div class="layout">
+            <form method="get" action="sent-rsvp.html">
+                <p class="rsvp">RSVP</p>
+
+                <div class="form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+        
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+        
+                    <label for="guest">No. of Additional Guest</label>
+                    <input type="text" id="guest" name="guest">
+        
+                    <p>Will you be attending?</p>
+                    <label class="attendance" for="attend" >
+                        <input type="radio" name="attend" id="attend" value="attend-both">
+                        Yes, I will be attending both the wedding ceremony and reception.
+                    </label>
+                    <label class="attendance" for="attend-ceremony">
+                        <input type="radio" name="attend" id="attend-ceremony" value="attend-ceremony">
+                        Yes, but I will only be attending the wedding ceremony.
+                    </label>
+                    <label class="attendance" for="attend-reception">
+                        <input type="radio" name="attend" id="attend-reception" value="attend-reception">
+                        Yes, but I will only be attending the wedding reception.
+                    </label>
+                    
+                    <input type="submit" value="Send RSVP">
+                </div>
+    
+                <div class="photo">
+                    <img src="images/couple.webp" alt="Couple Photo" loading="lazy" width="340" height="500">
+                </div>
+            </form>
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> 💌Edgie Marielle Ambao💌 Philippines</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
